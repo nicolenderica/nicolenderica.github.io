@@ -3,7 +3,19 @@ title: All you need is Ecuador
 layout: default
 category: demo page
 ---
-<h2>Ecuador</h2>
-
-This is the content of the page. All <em>HTML</em> can be included. Since the layout uses bootstrap we can also include <span class="text-danger">Bootstrap classes</span>.
-<p> This is a: {{ page.category }} type page </p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</div>
+</body>
+</html>
