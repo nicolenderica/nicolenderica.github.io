@@ -3,3 +3,8 @@
   border-right: 1px solid black;
   height: 1080px;
 }
+
+.pagetitle{
+  font: red;
+  float: center;
+}
